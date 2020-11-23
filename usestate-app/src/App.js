@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [posts,setPosts] = useState(data);
   return (
-    <div className="container">
-      <h3>{posts.length} posts today</h3>
+    <div className="container mt-5 text-center">
+      <h3 className="text-primary">{posts.length} posts today</h3>
       <List posts={posts}/>
       <button className="btn btn-primary" onClick={() => setPosts([])}>clear all posts</button>
     </div>
