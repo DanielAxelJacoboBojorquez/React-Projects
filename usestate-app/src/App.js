@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import data from './data';
 import List from './List';
 import 'bootstrap/dist/css/bootstrap.min.css';
-const [posts,setPosts] = useState(data);
+
 function App() {
+  const [posts,setPosts] = useState(data);
   return (
     <div className="container">
       <h3>{posts.length} posts today</h3>
